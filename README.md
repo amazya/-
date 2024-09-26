@@ -7,7 +7,7 @@ A step-by-step POC of samba server exploit. Scanning with Nmap to find open port
    
 ![Image](https://github.com/user-attachments/assets/9760e4af-aac6-403b-9aa0-8d2e98477477)
 
-## Confirmation of killing
+## Confirmation of killing 😉
 Enter to Metaspliotable2 with the password `msfadmin`
 
 ![Image](https://github.com/user-attachments/assets/843dad1a-bd6f-449f-b8a7-73ba0d242d21)
@@ -21,11 +21,13 @@ Let's see if my attack machine (-Kali Linux) can ping the victim machine. Use `n
 ![Image](https://github.com/user-attachments/assets/acd070ea-7caa-441f-b5bd-8e699d3bf326)
 
 It's clear that my attack machine can reach the victim.
+### Scanning open ports
 Now I'll find out what ports are open and which services are running in my victim. Use `nmap -sV <victim IP>` to run the service discovery:
 
 ![Image](https://github.com/user-attachments/assets/29dff5d7-0ce3-4a76-b7c0-086acef7e699)
 
 As you can see it's party time! 🎊🎊 There are to many ports open!
+### Look for the treasure (exploits...)
 Now that I've performed the service detection step, I know what versions of applications my victim is running. I just have to find out which one of them might be vulnerable. I searched vulnerabilities in my Metasploit database with the `msfconsole` command.
 
 ![Image](https://github.com/user-attachments/assets/fb14a62b-30dc-4e00-9139-5823af5fa2e2)
