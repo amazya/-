@@ -7,7 +7,7 @@ A step-by-step POC of samba server exploit. Scanning with Nmap to find open port
    
 ![Image](https://github.com/user-attachments/assets/9760e4af-aac6-403b-9aa0-8d2e98477477)
 
-## a
+## Confirmation of killing
 Enter to Metaspliotable2 with the password `msfadmin`
 
 ![Image](https://github.com/user-attachments/assets/843dad1a-bd6f-449f-b8a7-73ba0d242d21)
