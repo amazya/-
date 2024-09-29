@@ -6,6 +6,7 @@ A step-by-step POC of samba server exploit. Scanning with Nmap to find open port
 3. On VMware choose _open virtual machine_
 
 
+
 ## Confirmation of killing 😉
 Enter to Metaspliotable2 with the password `msfadmin`
 
