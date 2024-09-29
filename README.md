@@ -54,27 +54,39 @@ Now let's see the options I have to set up with `show options`:
 ![Image](https://github.com/amazya/Metasploit-exploit-module-POC/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-04-05%20042014.png)
 
 I can set up the RHOSTS and THREADS here. The RHOSTS will be my target and the THREADS determine how fast will the program run. 
+
 Let's set them up: 
+
 `set RHOSTS <victim IP>`
+
 `set THREADS 16`
+
 `show options`
 
 ![Image](https://github.com/amazya/Metasploit-exploit-module-POC/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-04-05%20042548.png)
 
 Now `run` it.
-The output gives me the version of the `Samba - 3.0.20`. Now I can fnd out the vulnerabilities associated with it. Let's try google. 
+
+The output gives me the version of the `Samba - 3.0.20`. Now I can find out the vulnerabilities associated with it. 
+Let's try google. 
 A simple google search reveals this version is vulnerable to `username map script` command execution.
 
 ![Image](https://github.com/amazya/Metasploit-exploit-module-POC/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-04-05%20043139.png)
 
 This is also available in Metasploit. Let's perform a search:
+
 `search username map script`
 
 ![Image](https://github.com/amazya/Metasploit-exploit-module-POC/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-04-05%20043743.png)
 
-As you can see, there is an exploit for this vulnerability with an excellent rank. Lets use this one and try to gain access to the metasploitable machine:
+As you can see, there is an exploit for this vulnerability with an excellent rank. Let's use this one and try to gain access to the metasploitable machine:
+
 `use <exploit number>`
+
 `show options`
+
 You can see that the Payload options are already set up. I will not change it. I only need to `set` up the RHOSTS options.
+
 Now let's `exploit`!
+
 The exploit sets up a reverse TCP handler to accept the incoming connection from the victim machine. Then the exploit completes and opens a session. We can also see that the access level is root. (Use `whoami` command to see it.)
