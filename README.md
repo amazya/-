@@ -1,5 +1,11 @@
 # Metasploit-exploit-module-POC
 A step-by-step POC of samba server exploit. Scanning with Nmap to find open ports, using Metasploit to find the vulnerability and gain access to the victim.
+
+## ⚠️ Warning
+> **This is for educational purpose only!**
+> I do not encourage to do it unless you have been granted explicitly the permission to do so. 
+  I will not be responsible for any harm caused by using this guide!
+
 ## Install 
 1. First of all download [Metaspliotable2](https://sourceforge.net/projects/metasploitable2/) Virtual Machine.
 2. Extract the folder
