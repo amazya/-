@@ -10,8 +10,7 @@ A step-by-step POC of samba server exploit. Scanning with Nmap to find open port
 1. First of all download [Metaspliotable2](https://sourceforge.net/projects/metasploitable2/) Virtual Machine.
 2. Extract the folder
 3. On VMware choose _open virtual machine_
-
-![Image](https://github.com/amazya/Metasploit-exploit-module-P.O.C/blob/main/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202024-04-05%20032350.png)
+   
 
 ## Confirmation of killing 😉
 Enter to Metaspliotable2 with the password `msfadmin`
